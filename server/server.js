@@ -24,3 +24,6 @@ app.post('/todos',(req,res) => { //
 app.listen(3000,() => { //callback runs when server is up
   console.log('Started on port 3000');
 });
+
+
+module.exports = {app};

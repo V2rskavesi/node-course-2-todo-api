@@ -1,0 +1,100 @@
+2018-07-18T18:22:32.348053+00:00 app[web.1]: > node server/server.js
+2018-07-18T18:22:32.348055+00:00 app[web.1]:
+2018-07-18T18:22:32.548444+00:00 app[web.1]: internal/modules/cjs/loader.js:596
+2018-07-18T18:22:32.548448+00:00 app[web.1]: throw err;
+2018-07-18T18:22:32.548450+00:00 app[web.1]: ^
+2018-07-18T18:22:32.548451+00:00 app[web.1]:
+2018-07-18T18:22:32.548455+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)
+2018-07-18T18:22:32.548457+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:520:25)
+2018-07-18T18:22:32.548458+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:650:17)
+2018-07-18T18:22:32.548453+00:00 app[web.1]: Error: Cannot find module 'body-Parser'
+2018-07-18T18:22:32.548460+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:20:18)
+2018-07-18T18:22:32.548461+00:00 app[web.1]: at Object.<anonymous> (/app/server/server.js:2:18)
+2018-07-18T18:22:32.548463+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:702:30)
+2018-07-18T18:22:32.548464+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)
+2018-07-18T18:22:32.548466+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:612:32)
+2018-07-18T18:22:32.548467+00:00 app[web.1]: at tryModuleLoad (internal/modules/cjs/loader.js:551:12)
+2018-07-18T18:22:32.553939+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2018-07-18T18:22:32.548469+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:543:3)
+2018-07-18T18:22:32.555428+00:00 app[web.1]: npm ERR! todo-api@1.0.0 start: `node server/server.js`
+2018-07-18T18:22:32.554304+00:00 app[web.1]: npm ERR! errno 1
+2018-07-18T18:22:32.555593+00:00 app[web.1]: npm ERR! Exit status 1
+2018-07-18T18:22:32.555816+00:00 app[web.1]: npm ERR!
+2018-07-18T18:22:32.555985+00:00 app[web.1]: npm ERR! Failed at the todo-api@1.0.0 start script.
+2018-07-18T18:22:32.556141+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2018-07-18T18:22:32.563464+00:00 app[web.1]:
+2018-07-18T18:22:32.563655+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2018-07-18T18:22:32.563729+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2018-07-18T18_22_32_557Z-debug.log
+2018-07-18T18:22:32.712745+00:00 heroku[web.1]: State changed from starting to crashed
+2018-07-18T18:22:32.714247+00:00 heroku[web.1]: State changed from crashed to starting
+2018-07-18T18:22:32.613466+00:00 heroku[web.1]: Process exited with status 1
+2018-07-18T18:22:37.592251+00:00 heroku[web.1]: Starting process with command `npm start`
+2018-07-18T18:22:40.450000+00:00 app[web.1]:
+2018-07-18T18:22:40.450027+00:00 app[web.1]: > todo-api@1.0.0 start /app
+2018-07-18T18:22:40.450028+00:00 app[web.1]: > node server/server.js
+2018-07-18T18:22:40.450030+00:00 app[web.1]:
+2018-07-18T18:22:40.842167+00:00 app[web.1]: internal/modules/cjs/loader.js:596
+2018-07-18T18:22:40.842209+00:00 app[web.1]: throw err;
+2018-07-18T18:22:40.842211+00:00 app[web.1]: ^
+2018-07-18T18:22:40.842213+00:00 app[web.1]:
+2018-07-18T18:22:40.842214+00:00 app[web.1]: Error: Cannot find module 'body-Parser'
+2018-07-18T18:22:40.842216+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)
+2018-07-18T18:22:40.842220+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:650:17)
+2018-07-18T18:22:40.842222+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:20:18)
+2018-07-18T18:22:40.842218+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:520:25)
+2018-07-18T18:22:40.842223+00:00 app[web.1]: at Object.<anonymous> (/app/server/server.js:2:18)
+2018-07-18T18:22:40.842225+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:702:30)
+2018-07-18T18:22:40.842226+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)
+2018-07-18T18:22:40.842229+00:00 app[web.1]: at tryModuleLoad (internal/modules/cjs/loader.js:551:12)
+2018-07-18T18:22:40.842228+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:612:32)
+2018-07-18T18:22:40.842231+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:543:3)
+2018-07-18T18:22:40.857235+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2018-07-18T18:22:40.857242+00:00 app[web.1]: npm ERR! todo-api@1.0.0 start: `node server/server.js`
+2018-07-18T18:22:40.857238+00:00 app[web.1]: npm ERR! errno 1
+2018-07-18T18:22:40.857244+00:00 app[web.1]: npm ERR! Exit status 1
+2018-07-18T18:22:40.857246+00:00 app[web.1]: npm ERR!
+2018-07-18T18:22:40.857250+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2018-07-18T18:22:40.857248+00:00 app[web.1]: npm ERR! Failed at the todo-api@1.0.0 start script.
+2018-07-18T18:22:40.860637+00:00 app[web.1]:
+2018-07-18T18:22:40.860860+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2018-07-18T18:22:40.861006+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2018-07-18T18_22_40_852Z-debug.log
+2018-07-18T18:22:40.925749+00:00 heroku[web.1]: Process exited with status 1
+2018-07-18T18:22:40.940060+00:00 heroku[web.1]: State changed from starting to crashed
+2018-07-18T18:23:27.151441+00:00 heroku[web.1]: State changed from crashed to starting
+2018-07-18T18:23:26.848021+00:00 app[api]: Release v4 created by user hanskask@hotmail.com
+2018-07-18T18:23:26.848021+00:00 app[api]: Set MONGODB_URI config vars by user hanskask@hotmail.com
+2018-07-18T18:23:29.669705+00:00 heroku[web.1]: Starting process with command `npm start`
+2018-07-18T18:23:32.345920+00:00 heroku[web.1]: Process exited with status 1
+2018-07-18T18:23:32.058070+00:00 app[web.1]:
+2018-07-18T18:23:32.058097+00:00 app[web.1]: > todo-api@1.0.0 start /app
+2018-07-18T18:23:32.058099+00:00 app[web.1]: > node server/server.js
+2018-07-18T18:23:32.058100+00:00 app[web.1]:
+2018-07-18T18:23:32.253719+00:00 app[web.1]: internal/modules/cjs/loader.js:596
+2018-07-18T18:23:32.253723+00:00 app[web.1]: throw err;
+2018-07-18T18:23:32.253724+00:00 app[web.1]: ^
+2018-07-18T18:23:32.253726+00:00 app[web.1]:
+2018-07-18T18:23:32.253727+00:00 app[web.1]: Error: Cannot find module 'body-Parser'
+2018-07-18T18:23:32.253728+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)
+2018-07-18T18:23:32.253729+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:520:25)
+2018-07-18T18:23:32.253731+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:650:17)
+2018-07-18T18:23:32.253732+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:20:18)
+2018-07-18T18:23:32.253733+00:00 app[web.1]: at Object.<anonymous> (/app/server/server.js:2:18)
+2018-07-18T18:23:32.253734+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:702:30)
+2018-07-18T18:23:32.253735+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)
+2018-07-18T18:23:32.253737+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:612:32)
+2018-07-18T18:23:32.253742+00:00 app[web.1]: at tryModuleLoad (internal/modules/cjs/loader.js:551:12)
+2018-07-18T18:23:32.253743+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:543:3)
+2018-07-18T18:23:32.258941+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2018-07-18T18:23:32.259254+00:00 app[web.1]: npm ERR! errno 1
+2018-07-18T18:23:32.260354+00:00 app[web.1]: npm ERR! todo-api@1.0.0 start: `node server/server.js`
+2018-07-18T18:23:32.260465+00:00 app[web.1]: npm ERR! Exit status 1
+2018-07-18T18:23:32.260650+00:00 app[web.1]: npm ERR!
+2018-07-18T18:23:32.260770+00:00 app[web.1]: npm ERR! Failed at the todo-api@1.0.0 start script.
+2018-07-18T18:23:32.260884+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2018-07-18T18:23:32.266426+00:00 app[web.1]:
+2018-07-18T18:23:32.266616+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2018-07-18T18:23:32.266752+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2018-07-18T18_23_32_262Z-debug.log
+2018-07-18T18:23:32.364254+00:00 heroku[web.1]: State changed from starting to crashed
+2018-07-18T18:24:01.311942+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tranquil-reaches-31347.herokuapp.com request_id=15bc6440-bfb3-44d7-9a07-cd21b56d37bd fwd="146.255.182.241" dyno= connect= service= status=503 bytes= protocol=https
+2018-07-18T18:24:01.825809+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=tranquil-reaches-31347.herokuapp.com request_id=704c5c41-b996-4c2f-bb77-b871d5bf8055 fwd="146.255.182.241" dyno= connect= service= status=503 bytes= protocol=https
+2018-07-18T18:24:01.829369+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=tranquil-reaches-31347.herokuapp.com request_id=762e2e21-670c-4508-8a51-6e52ec88c79a fwd="146.255.182.241" dyno= connect= service= status=503 bytes= protocol=https

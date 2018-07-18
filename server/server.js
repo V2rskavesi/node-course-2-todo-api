@@ -45,7 +45,7 @@ Todo.findById(id).then((todo) => {
 
 });
 
-app.listen(3000,() => { //callback runs when server is up
+app.listen(port,() => { //callback runs when server is up
   console.log(`Started up at port: ${port}`);
 });
 

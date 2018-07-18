@@ -7,7 +7,7 @@ var {User} = require('./models/user');
 const {ObjectID} = require('mongodb')
 
 var app = express();
-
+const port = process.env.PORT || 3000;
 app.use(bodyParser.json()); //middleware
 
 app.post('/todos',(req,res) => { //
@@ -38,7 +38,7 @@ if (!ObjectID.isValid(id)) {  // if ojbectid is not valid, send bad response
 }
 
 Todo.findById(id).then((todo) => {
-  res.send(todo)
+  res.send({todo}) //send the todo 'todo' from the todos 'array', cause thats what comes back from findbyid
 },(e) => {
   res.status(400).send()
 })
@@ -46,7 +46,7 @@ Todo.findById(id).then((todo) => {
 });
 
 app.listen(3000,() => { //callback runs when server is up
-  console.log('Started on port 3000');
+  console.log(`Started up at port: ${port}`);
 });
 
 

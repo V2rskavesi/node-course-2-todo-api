@@ -45,6 +45,24 @@ Todo.findById(id).then((todo) => {
 
 });
 
+app.delete('/todos/:id',(req,res) => {
+  id = req.params.id;
+
+  if (!ObjectID.isValid(id)) {  // if ojbectid is not valid, send bad response
+    return res.status(404).send();
+  };
+
+  Todo.findByIdAndRemove(id).then((todo) => { // these find always return something, so we name it 'todo' and print it
+    if(!todo){
+    return res.status(404).send();
+    }
+    res.send(todo);
+  },(e) => {
+    res.status(400).send();
+  });
+
+});
+
 app.listen(port,() => { //callback runs when server is up
   console.log(`Started up at port: ${port}`);
 });

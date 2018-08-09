@@ -91,6 +91,21 @@ Todo.findByIdAndUpdate(id, {$set:body}, {new:true}).then((todo) => {
 });
 });
 
+
+app.post('/users/',(req, res) => {
+  var body = _.pick(req.body, ['email' ,'password']) //return object with these properties
+  var user = new User(body); // we can pass this in cause is the same object you wrote
+
+  user.save().then(() => {
+    return user.generateAuthToken();
+  }).then((token) => {
+    res.header('x-auth', token).send(user); // x- custom header
+  }).catch((e) => {
+    res.status(400).send(e);
+  })
+
+});
+
 app.listen(port,() => { //callback runs when server is up
   console.log(`Started up at port: ${port}`);
 });
